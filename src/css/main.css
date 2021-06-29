@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+body {
+  background: #ffffff;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  color: #222222;
+}
+
+.customNav {
+  padding: 1em;
+  border-bottom: 1px solid #222222;
+  margin-bottom: 1em;
+}
+
+.customNav .navbar-brand {
+  color: #222222;
+  font-weight: 700;
+}
+
+.customNav .navbar-brand:hover {
+  color: #61dafb;
+}
+
+.customNav .navbar-nav {
+  color: #222222;
+}
+
+.customNav .navbar-nav:hover {
+  color: #61dafb;
+}
+
+.title {
+  padding-top: 1em;
+}
+
+.title h1 {
+  font-weight: 700;
+}
+
+.title h3 {
+  font-weight: 700;
+}
+
+.content {
+  padding-top: 1em;
+}
+
+.content .jumbotron {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fdcbf1), color-stop(1%, #fdcbf1), to(#e6dee9));
+  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+  color: #ffffff;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.content .jumbotron .name {
+  padding-top: 1em;
+}
+
+.content .sideBar {
+  border-left: 1px solid #222222;
+}
+
+.content .sideBar p {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #222222;
+}
+
+.content .sideBar p img {
+  float: left;
+  margin: 5px 10px 0 0;
+}
+/*# sourceMappingURL=main.css.map */

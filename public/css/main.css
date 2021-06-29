@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.customNav {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.customNav .navbar-brand {
+  color: #222222;
+  font-weight: 700;
+}
+
+.customNav .navbar-nav a {
+  margin-left: 100em;
+}
+/*# sourceMappingURL=main.css.map */

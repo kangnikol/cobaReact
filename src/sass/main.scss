@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+
+$baseColor: #ffffff;
+$secondColor: #222222;
+$thirdColor: #4b4e6d;
+$fourthColor: #61dafb;
+$fifthColor: #95a3b3;
+
+body {
+  background: $baseColor;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  // background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  color: $secondColor;
+}
+
+.customNav {
+  padding: 1em;
+  border-bottom: 1px solid $secondColor;
+  margin-bottom: 1em;
+
+  .navbar-brand {
+    color: $secondColor;
+    font-weight: 700;
+  }
+
+  .navbar-brand:hover {
+    color: $fourthColor;
+  }
+
+  .navbar-nav {
+    color: $secondColor;
+  }
+
+  .navbar-nav:hover {
+    color: $fourthColor;
+  }
+}
+
+.title {
+  padding-top: 1em;
+  h1 {
+    font-weight: 700;
+  }
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.content {
+  padding-top: 1em;
+
+  .jumbotron {
+    background-image: linear-gradient(
+      to top,
+      #fdcbf1 0%,
+      #fdcbf1 1%,
+      #e6dee9 100%
+    );
+
+    color: $baseColor;
+    border-radius: 2em;
+    text-align: center;
+
+    .name {
+      padding-top: 1em;
+    }
+  }
+
+  .sideBar {
+    border-left: 1px solid $secondColor;
+
+    p {
+      padding-bottom: 1em;
+      border-bottom: 1px solid $secondColor;
+      img {
+        float: left;
+        margin: 5px 10px 0 0;
+      }
+    }
+  }
+}
