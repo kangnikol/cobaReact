@@ -1,81 +1,171 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
-$baseColor: #ffffff;
-$secondColor: #222222;
-$thirdColor: #4b4e6d;
-$fourthColor: #61dafb;
-$fifthColor: #95a3b3;
+$baseColor: #fffdf7;
+$secondColor: #0a2342;
+$thirdColor: #f46197;
+$fourthColor: #2ca58d;
+$fifthColor: #84bc9c;
 
 body {
-  background: $baseColor;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUklEQVQoU2PUWdr7n4GBgeFyRBaIwgkYiVb4/+93sInIgFvNG8z9emsrXJiRIoXYHMrYsmcO2Opqx2j8niFaITY3fk1ZADade04Cfs8QrRCbYwGbmTN/MmqYFgAAAABJRU5ErkJggg==)
+    repeat;
   min-height: 100vh;
-  font-family: "Nunito", sans-serif;
+  font-family: "Varela Round", sans-serif;
   // background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   color: $secondColor;
 }
 
-.customNav {
-  padding: 1em;
-  border-bottom: 1px solid $secondColor;
+.navRoot {
+  background: rgba($color: $secondColor, $alpha: 1);
+  padding: 0.3em;
   margin-bottom: 1em;
+  border-radius: 0 0 2em 2em;
 
   .navbar-brand {
-    color: $secondColor;
+    color: $baseColor;
     font-weight: 700;
   }
 
   .navbar-brand:hover {
-    color: $fourthColor;
+    color: $thirdColor;
   }
 
   .navbar-nav {
     color: $secondColor;
-  }
 
-  .navbar-nav:hover {
-    color: $fourthColor;
-  }
-}
-
-.title {
-  padding-top: 1em;
-  h1 {
-    font-weight: 700;
-  }
-  h3 {
-    font-weight: 700;
+    .nav {
+      color: $baseColor;
+    }
+    .nav:hover {
+      color: $thirdColor;
+    }
   }
 }
 
-.content {
-  padding-top: 1em;
-
-  .jumbotron {
-    background-image: linear-gradient(
-      to top,
-      #fdcbf1 0%,
-      #fdcbf1 1%,
-      #e6dee9 100%
-    );
-
-    color: $baseColor;
+.homeRoot {
+  .homepage {
+    background: $secondColor;
     border-radius: 2em;
-    text-align: center;
+    padding-right: 1em;
 
-    .name {
+    .title {
       padding-top: 1em;
+
+      h1 {
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $baseColor;
+      }
+
+      h1:hover {
+        color: $thirdColor;
+      }
+    }
+
+    .content {
+      color: $baseColor;
     }
   }
 
   .sideBar {
-    border-left: 1px solid $secondColor;
+    margin-left: 1em;
+    padding-left: 1.5em;
+    border-radius: 2em;
+    background: rgba($color: $secondColor, $alpha: 1);
+    .title {
+      padding-top: 1em;
 
-    p {
-      padding-bottom: 1em;
-      border-bottom: 1px solid $secondColor;
+      h3 {
+        color: $baseColor;
+        font-weight: 700;
+      }
+    }
+
+    .content {
+      margin-top: 1em;
+      margin-left: -1em;
+      color: $baseColor;
+
       img {
         float: left;
-        margin: 5px 10px 0 0;
+      }
+
+      p {
+      }
+
+      .link {
+        color: $thirdColor;
+      }
+    }
+  }
+}
+
+.aboutRoot {
+  .title {
+    background: $secondColor;
+    border-radius: 2em;
+    padding-top: 1em;
+    h1 {
+      padding: 0.1em;
+      color: $baseColor;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+
+  .content {
+    padding-top: 1em;
+
+    .jumbotron {
+      background: $secondColor;
+      border: 2px solid $baseColor;
+      color: $secondColor;
+      border-radius: 2em;
+      text-align: center;
+
+      img {
+        border: 3px solid $baseColor;
+      }
+
+      .name {
+        padding-top: 1em;
+        color: $baseColor;
+      }
+
+      .job {
+        color: $baseColor;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .homepage {
+    border-right: 0 solid $fourthColor;
+    .title {
+      h1 {
+        font-size: 2em;
+        text-align: center;
+      }
+    }
+
+    .content {
+      text-align: justify;
+    }
+  }
+
+  .sideBar {
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    .title {
+      h1 {
+      }
+    }
+
+    .content {
+      .link {
       }
     }
   }

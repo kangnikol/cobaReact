@@ -1,73 +1,146 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 body {
-  background: #ffffff;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUklEQVQoU2PUWdr7n4GBgeFyRBaIwgkYiVb4/+93sInIgFvNG8z9emsrXJiRIoXYHMrYsmcO2Opqx2j8niFaITY3fk1ZADade04Cfs8QrRCbYwGbmTN/MmqYFgAAAABJRU5ErkJggg==) repeat;
   min-height: 100vh;
-  font-family: "Nunito", sans-serif;
-  color: #222222;
+  font-family: "Varela Round", sans-serif;
+  color: #0a2342;
 }
 
-.customNav {
-  padding: 1em;
-  border-bottom: 1px solid #222222;
+.navRoot {
+  background: #0a2342;
+  padding: 0.3em;
   margin-bottom: 1em;
+  border-radius: 0 0 2em 2em;
 }
 
-.customNav .navbar-brand {
-  color: #222222;
+.navRoot .navbar-brand {
+  color: #fffdf7;
   font-weight: 700;
 }
 
-.customNav .navbar-brand:hover {
-  color: #61dafb;
+.navRoot .navbar-brand:hover {
+  color: #f46197;
 }
 
-.customNav .navbar-nav {
-  color: #222222;
+.navRoot .navbar-nav {
+  color: #0a2342;
 }
 
-.customNav .navbar-nav:hover {
-  color: #61dafb;
+.navRoot .navbar-nav .nav {
+  color: #fffdf7;
 }
 
-.title {
+.navRoot .navbar-nav .nav:hover {
+  color: #f46197;
+}
+
+.homeRoot .homepage {
+  background: #0a2342;
+  border-radius: 2em;
+  padding-right: 1em;
+}
+
+.homeRoot .homepage .title {
   padding-top: 1em;
 }
 
-.title h1 {
-  font-weight: 700;
+.homeRoot .homepage .title h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fffdf7;
 }
 
-.title h3 {
-  font-weight: 700;
+.homeRoot .homepage .title h1:hover {
+  color: #f46197;
 }
 
-.content {
+.homeRoot .homepage .content {
+  color: #fffdf7;
+}
+
+.homeRoot .sideBar {
+  margin-left: 1em;
+  padding-left: 1.5em;
+  border-radius: 2em;
+  background: #0a2342;
+}
+
+.homeRoot .sideBar .title {
   padding-top: 1em;
 }
 
-.content .jumbotron {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#fdcbf1), color-stop(1%, #fdcbf1), to(#e6dee9));
-  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-  color: #ffffff;
+.homeRoot .sideBar .title h3 {
+  color: #fffdf7;
+  font-weight: 700;
+}
+
+.homeRoot .sideBar .content {
+  margin-top: 1em;
+  margin-left: -1em;
+  color: #fffdf7;
+}
+
+.homeRoot .sideBar .content img {
+  float: left;
+}
+
+.homeRoot .sideBar .content .link {
+  color: #f46197;
+}
+
+.aboutRoot .title {
+  background: #0a2342;
+  border-radius: 2em;
+  padding-top: 1em;
+}
+
+.aboutRoot .title h1 {
+  padding: 0.1em;
+  color: #fffdf7;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.aboutRoot .content {
+  padding-top: 1em;
+}
+
+.aboutRoot .content .jumbotron {
+  background: #0a2342;
+  border: 2px solid #fffdf7;
+  color: #0a2342;
   border-radius: 2em;
   text-align: center;
 }
 
-.content .jumbotron .name {
+.aboutRoot .content .jumbotron img {
+  border: 3px solid #fffdf7;
+}
+
+.aboutRoot .content .jumbotron .name {
   padding-top: 1em;
+  color: #fffdf7;
 }
 
-.content .sideBar {
-  border-left: 1px solid #222222;
+.aboutRoot .content .jumbotron .job {
+  color: #fffdf7;
 }
 
-.content .sideBar p {
-  padding-bottom: 1em;
-  border-bottom: 1px solid #222222;
-}
-
-.content .sideBar p img {
-  float: left;
-  margin: 5px 10px 0 0;
+@media (max-width: 720px) {
+  .homepage {
+    border-right: 0 solid #2ca58d;
+  }
+  .homepage .title h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .homepage .content {
+    text-align: justify;
+  }
+  .sideBar {
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

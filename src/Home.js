@@ -1,42 +1,81 @@
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
-    <div>
+    <div className="homeRoot">
       <div className="container">
-        <div className="row title">
-          <div className="col-8">
-            <h1>Homepage</h1>
+        <div className="row">
+          <div className="col-12 col-lg-8 homepage">
+            <div className="row title">
+              <div className="col-8">
+                <h1>Homepage</h1>
+              </div>
+            </div>
+            <div className="row content">
+              <div className="col-12 col-lg-12">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis molestias non tenetur sunt temporibus pariatur eos
+                  necessitatibus sequi deleniti repudiandae, aspernatur commodi
+                  perspiciatis consectetur quae repellat laborum ea unde
+                  aliquam, quas quam perferendis veritatis deserunt! Neque,
+                  nulla laborum praesentium sunt quod ducimus ratione architecto
+                  odit fugiat aspernatur ea fuga? Molestiae reprehenderit ex
+                  deserunt ad, omnis dignissimos suscipit autem accusantium.
+                  Nihil eum dolorum velit aliquam natus fugit nobis architecto
+                  vel omnis, cumque porro non neque voluptatum quidem pariatur.
+                  Laborum culpa distinctio nisi, dolore commodi quas est sed
+                  ipsum voluptatum. Minima nam qui alias provident maxime
+                  repudiandae odit impedit, fugiat corporis fuga.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="col-4">
-            <h3>Article</h3>
-          </div>
-        </div>
-        <div className="row content">
-          <div className="col-8">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestias officia quos sunt sequi quibusdam obcaecati, incidunt
-              dolorum dolor aut tempora est quas maxime magnam sit officiis
-              reiciendis ipsa qui quia, corrupti sint impedit, pariatur magni.
-              Alias dolorum sunt cumque architecto voluptates, sint quisquam sit
-              perferendis illo id maiores ullam perspiciatis?
-            </p>
-          </div>
-          <div className="col-4 sideBar">
-            <p>
-              <img src="/pp_adobespark.jpg" alt="cth" height={30} width={30} />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, aut.
-            </p>
-            <p>
-              <img src="/pp_adobespark.jpg" alt="cth" height={30} width={30} />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, aut.
-            </p>
-            <p>
-              <img src="/pp_adobespark.jpg" alt="cth" height={30} width={30} />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, aut.
-            </p>
+          <div className="col sideBar">
+            <div className="row title">
+              <div className="col-8">
+                <h3>Article</h3>
+              </div>
+            </div>
+            <div className="row content">
+              <div className="col-12 col-lg-11">
+                <img
+                  src="/pp_adobespark.jpg"
+                  alt="cth"
+                  height={50}
+                  width={50}
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. ...
+                  <Link className="link" to="/about">
+                    Learn more
+                  </Link>
+                </p>
+                <img
+                  src="/pp_adobespark.jpg"
+                  alt="cth"
+                  height={50}
+                  width={50}
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. ...
+                  <Link className="link" to="/about">
+                    Learn more
+                  </Link>
+                </p>
+                <img
+                  src="/pp_adobespark.jpg"
+                  alt="cth"
+                  height={50}
+                  width={50}
+                />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. ...
+                <p>
+                  <Link className="link" to="/about">
+                    Learn more
+                  </Link>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
