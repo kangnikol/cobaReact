@@ -56,7 +56,7 @@ const Home = () => {
                   height={50}
                   width={50}
                 />
-                <p>
+                <p className="p">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. ...
                   <Link className="link" to="/about">
                     Learn more
@@ -68,8 +68,8 @@ const Home = () => {
                   height={50}
                   width={50}
                 />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. ...
                 <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. ...
                   <Link className="link" to="/about">
                     Learn more
                   </Link>

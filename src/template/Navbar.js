@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Navbar = () => {
   return (
     <div className="navRoot">
-      <nav className="navbar navbar-expand-lg navbar-dark">
-        <div className="container">
+      <div className="container">
+        <nav className="navbar navbar-expand-lg navbar-dark">
           <Link className="navbar-brand" to="/">
             nikolPage
           </Link>
@@ -30,8 +30,8 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   );
 };

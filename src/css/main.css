@@ -1,20 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 body {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAUklEQVQoU2PUWdr7n4GBgeFyRBaIwgkYiVb4/+93sInIgFvNG8z9emsrXJiRIoXYHMrYsmcO2Opqx2j8niFaITY3fk1ZADade04Cfs8QrRCbYwGbmTN/MmqYFgAAAABJRU5ErkJggg==) repeat;
+  background: #fffdf7;
   min-height: 100vh;
   font-family: "Varela Round", sans-serif;
   color: #0a2342;
 }
 
 .navRoot {
-  background: #0a2342;
+  z-index: 100;
+  background: white;
   padding: 0.3em;
-  margin-bottom: 1em;
-  border-radius: 0 0 2em 2em;
 }
 
 .navRoot .navbar-brand {
-  color: #fffdf7;
+  color: #0a2342;
   font-weight: 700;
 }
 
@@ -27,7 +26,7 @@ body {
 }
 
 .navRoot .navbar-nav .nav {
-  color: #fffdf7;
+  color: #0a2342;
 }
 
 .navRoot .navbar-nav .nav:hover {
@@ -76,7 +75,6 @@ body {
 
 .homeRoot .sideBar .content {
   margin-top: 1em;
-  margin-left: -1em;
   color: #fffdf7;
 }
 
@@ -84,8 +82,40 @@ body {
   float: left;
 }
 
+.homeRoot .sideBar .content .p {
+  padding-left: 1em;
+}
+
 .homeRoot .sideBar .content .link {
   color: #f46197;
+}
+
+.carousel {
+  margin-bottom: 1em;
+  min-height: 70vh;
+}
+
+.second {
+  background: #0a2342;
+  color: #fffdf7;
+  border-radius: 2em;
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+
+.second .title h1 {
+  margin-left: 1em;
+  margin-top: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.second img {
+  border-radius: 1em;
+}
+
+.second .thumb {
+  margin-bottom: 30px;
 }
 
 .aboutRoot .title {
@@ -126,6 +156,27 @@ body {
   color: #fffdf7;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fffdf7;
+  background: #0a2342;
+  border-radius: 2em 2em 0 0;
+  padding: 1px;
+  text-align: center;
+}
+
+.footer p {
+  margin-top: 1em;
+}
+
 @media (max-width: 720px) {
   .homepage {
     border-right: 0 solid #2ca58d;
@@ -140,7 +191,13 @@ body {
   .sideBar {
     margin-right: 1em;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
+  }
+  .sideBar .content .p {
+    padding-left: 1em;
+  }
+  .footer {
+    margin-top: 5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
